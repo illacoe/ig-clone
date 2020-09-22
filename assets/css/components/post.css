@@ -1,0 +1,138 @@
+.section{
+    display: flex;
+    flex-grow: 1;
+    margin-top: 50px;
+}
+.section__post{
+    margin: 30px 0;
+    width: 100%;
+    max-width: 600px;
+}
+.section__post-author{
+    display: flex;
+    align-items: center;
+}
+.section__post-header{
+    background-color: #ffffff;
+    border-top: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb ;
+    border-right: 1px solid #dbdbdb;
+    border-bottom:0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section__icon-admin-post img{
+    width: 32px;
+    border-radius: 20px;
+}
+.section__name-author-post{
+    font-size: 15px;
+    display: flex;
+    align-content: center;
+    margin-left: 10px;
+}
+.post-content{
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+.section__post-buttons{
+    display: flex;
+    justify-content: space-between;
+    border-left: 1px solid #dbdbdb ;
+    border-right: 1px solid #dbdbdb;
+
+}
+.post__buttons{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.post-btn{
+    background-color: transparent;
+    border: none;
+    padding: 10px ;
+}
+.section__post-content{
+    border: 1px solid #dbdbdb;
+}
+.section__post-description{
+    padding: 0 10px;
+    border-left: 1px solid #dbdbdb ;
+    border-right: 1px solid #dbdbdb;
+}
+.section__post-likes{
+    font-weight: bold;
+    font-size: 15px;
+}
+.section__name-author-post{
+    font-weight: bold;
+    font-size: 15px;
+}
+.section__post-comments{
+    padding: 10px;
+    border-left: 1px solid #dbdbdb ;
+    border-right: 1px solid #dbdbdb;
+}
+.post-description, .post-comment{
+    font-size: 15px;
+}
+.post-comment{
+    margin: 5px 0;
+    display: block;
+}
+.section__post-date{
+    font-size: 10px;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    padding: 10px;
+    border-left: 1px solid #dbdbdb ;
+    border-right: 1px solid #dbdbdb;
+    display: flex;
+}
+.section__post-textarea{
+    display: flex;
+    padding: 20px 10px;
+    border: 1px solid #dbdbdb ;
+    justify-content: space-between;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.post-textarea{
+    height: 18px;
+    background: 0 0;
+    border: 0;
+    color: #262626;
+    color: rgba(var(--i1d,38,38,38),1);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 15px;
+    height: 18px;
+    max-height: 80px;
+    outline: 0;
+    padding: 0;
+    resize: none;
+    width: 0;
+}
+.post-send-comment{
+    background:none;
+    border: 0;
+    color: #0095f6; 
+    font-size: 15px;
+    font-weight: bold;
+    display: inline;
+    padding: 0;
+    position: relative;
+    /* opacity: .3; */
+}
