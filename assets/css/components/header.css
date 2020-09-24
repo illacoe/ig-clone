@@ -26,14 +26,17 @@
 .nav__logo{
     display: flex;
     align-content: center;
-    width: fit-content;
+    width: calc(100vh - 90vh);
+    
 }
 .nav__logo-img{
-    width: 50%;
-    height: intrinsic;
+    width: 100%;
+    height: intrinsic; 
 }
 
 .icon-admin img{
     border-radius: 20px;
     width: 22px; 
 }
+
+

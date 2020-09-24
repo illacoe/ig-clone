@@ -1,9 +1,29 @@
 .aside{ 
-    margin-top: 30px;
-    width: 30%;
+    /* margin-top: 30px; */
+    /* width: 30%; */
+    /* width: calc(100%/3.4);
     right: 9%;
+    position: fixed; */
     position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
      
+}
+.aside__container{
+    width: 100%;
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: flex-end;
+}
+.aside__profile-space{
+    height: 80px;
+}
+.aside__panel-right{
+    width: 30%;
+    right: 0; 
 }
 .aside__profile{
     background-color: #ffffff;
@@ -13,7 +33,6 @@
     border-radius: 5px;
 
 }
-
 .aside__profile-photo{
     display: flex;
     justify-content: center;
@@ -45,4 +64,12 @@
  font-weight: lighter;
  font-size: 8px;
  text-transform: uppercase;
+}
+
+@media (max-width: 997px){
+     .aside{
+       display: none;
+     }
+     
+      
 }
