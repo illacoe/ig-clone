@@ -9,28 +9,52 @@
   width: 100%;
   justify-content: center;
   max-width: 300px;
+  grid-row: span 2;
 }
 .section__photo-user img {
   width: 160px;
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
+  
 }
 .section__info-user {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.section__profile{
+  display: grid;
+  grid-template-columns: 30% 1fr;
+ 
+  
+}
+.section__info-user-2 {
+  grid-column-end: 3;
+  margin-top: 30px;
+}
+
 
 .section__info-username {
   font-size: 25px;
   font-weight: lighter;
+}
+.info-panel{
+  display: flex;
+}
+.info-panel > *{
+  margin-right:10px ;
 }
 
 .section__info-panel {
   margin: 10px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.section__info-panel-2 {
+  display: flex;
+  flex-direction: column;
 }
 .section__info-name {
   font-size: 18px;
@@ -39,6 +63,7 @@
 .section__info-description {
   font-size: 15px;
   line-height: 20px;
+  margin: 20px 0;
 }
 .section__info-website {
   text-decoration: none;
@@ -65,7 +90,7 @@
 
 .section__panel-posts {
   display: grid;
-  grid-template-columns: repeat(3, minmax(8rem, 1fr));
+  grid-template-columns: repeat(3, minmax(3%, 1fr));
   grid-auto-rows: 1fr;
   gap: 20px;
   margin: 20px 0;
@@ -118,4 +143,57 @@
 
 .icon-info{
     margin-right: 5px;
+}
+.section__info-panel{
+  width: 40%;
+}
+
+@media (max-width: 768px){
+  .section__info-name {
+    font-size: 15px; 
+  }
+  .section__photo-user img {
+    width: 60px;
+    height: 60px;  
+  }
+  .section__info-panel{
+    gap: 12px;
+  }
+  .section__profile{
+    gap: 10px;
+  }
+  .section__info-user-2 {
+    grid-column: span 2;
+    margin-top: 0px;
+  }
+  .info-panel{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .info-panel > *{
+    margin-right:0;
+    font-size: 14px;
+  }
+  .section__panel-posts{
+    gap: 0px;
+  }
+
+element.style {
+}
+.section__info-description {
+    font-size: 13px; 
+    
+}
+}
+@media (max-width: 388px){
+  .info-panel, .info-panel > *{
+    font-size: 10px;
+  }
+  .section__info-username {
+    font-size: 18px;
+}
+  .section__info-panel{
+    gap: 5px;
+  }
 }
