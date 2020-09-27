@@ -144,4 +144,11 @@
         width: 100%;
        max-width: 100%;
     }
+    .section__name-author-post, .section__post-likes, .post-description,   .post-comment, .post-send-comment, .post-textarea{
+        font-size: 12px;
+    }
+    .section__post-date{
+    font-size: 8px;
+    }
+
 }
