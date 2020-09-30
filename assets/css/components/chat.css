@@ -137,11 +137,12 @@
 }
 .section__chat-room-body {
   overflow-y: scroll;
-  height: calc(100vh - 40vh);
+  height: calc(100vh - 35vh);
 }
 .section__chat-room-footer{
   display: flex;
   padding: 10px;
+  background-color: #ffffff;
 }
 .section__chat-room-textarea-container{
   display: flex;
@@ -161,6 +162,7 @@
   background-color: transparent;
   border: none; 
 }
+
 @media (max-width: 768px) {
   .section__chat-room {
     display: none;
