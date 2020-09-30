@@ -169,4 +169,7 @@
     width: 100%;
     border: none;
   }
+  .section__chat-room-textarea-btn:first-child{
+    display: none;
+  }
 }
