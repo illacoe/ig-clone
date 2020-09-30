@@ -137,7 +137,7 @@
 }
 .section__chat-room-body {
   overflow-y: scroll;
-  height: calc(100vh - 35vh);
+  height: calc(100vh - 40vh);
 }
 .section__chat-room-footer{
   display: flex;
